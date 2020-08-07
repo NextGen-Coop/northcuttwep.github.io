@@ -1,0 +1,89 @@
+---
+---
+$font_color: #f3f3f3
+$footer_bg: #333333
+$main_bg: #606060
+$nav_bg: #737373
+$title_font: 'courier new', monospace
+$body_font: 'courier new', monospace
+$menu_font: 'Arial', 'Helvetica', sans-serif
+
+html
+  width: 100%
+  margin: 0
+
+body
+  background-color: black
+  width: 100%
+  margin: 0
+  display: flex
+  flex-flow: column nowrap
+  color: $font_color
+
+header
+  order: 0
+  h1
+    font-family: $title_font
+    font-size: 400%
+    margin: 0 auto
+    text-align: center
+    a
+      color: $font_color
+      text-shadow: 0px 2px 3px rgba(50, 50, 50, 0.8)
+      text-decoration: none
+      text-transform: uppercase
+  .hero
+    height: 900px
+    background-color: transparent
+    background-size: cover
+    display: flex
+    flex-flow: column nowrap
+    justify-content: space-evenly
+
+main
+  order: 2
+  font-family: $body_font
+  background: $main_bg
+  margin: 0 auto
+  padding: 5px 25px
+  display: flex
+  flex-direction: column
+  header
+    h2
+      font-family: $title_font
+      font-size: 200%
+      text-transform: uppercase
+      text-align: center
+
+aside
+  order: 1
+  background: $nav_bg
+  nav
+    ul
+      display: flex
+      flex-flow: row nowrap
+      justify-content: space-evenly
+      li
+        list-style: none
+        font-family: $menu_font 
+        a
+          color: $font_color
+          text-decoration: none
+          &:hover
+            color: white
+          &:focus
+            color: white
+        
+footer
+  order: 3
+  background: $footer_bg
+  color: $font_color
+  .wrapper
+    h5
+      text-align: center
+      font-family: $title_font
+      font-size: 200%
+    .footer-col-wrapper
+      display: flex
+      flex-flow: row wrap
+      justify-content: space-evenly

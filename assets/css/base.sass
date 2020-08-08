@@ -1,9 +1,10 @@
 ---
 ---
-$font_color: #f3f3f3
+$font_color: #080808
 $footer_bg: #333333
-$main_bg: #606060
-$nav_bg: #737373
+$main_bg: #f8f8f8
+$nav_bg: #666666
+$author_bg: rgba(227, 242, 243, 1)
 $title_font: 'courier new', monospace
 $body_font: 'courier new', monospace
 $menu_font: 'Arial', 'Helvetica', sans-serif
@@ -13,12 +14,13 @@ html
   margin: 0
 
 body
-  background-color: black
+  background-color: $main_bg
   width: 100%
   margin: 0
   display: flex
   flex-flow: column nowrap
   color: $font_color
+  font-weight: bold
 
 header
   order: 0
@@ -54,6 +56,14 @@ main
       font-size: 200%
       text-transform: uppercase
       text-align: center
+  .home
+    .author
+      background: $author_bg
+      display: flex
+      flex-direction: row
+      align-items: center
+      .bio
+        padding: 30px
 
 aside
   order: 1

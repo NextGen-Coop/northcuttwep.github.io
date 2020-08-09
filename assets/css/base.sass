@@ -4,7 +4,7 @@ $font_color: #080808
 $footer_bg: #333333
 $main_bg: #f8f8f8
 $nav_bg: #666666
-$author_bg: rgba(227, 242, 243, 1)
+$author_bg: rgba(227, 242, 243, .75)
 $title_font: 'courier new', monospace
 $body_font: 'courier new', monospace
 $menu_font: 'Arial', 'Helvetica', sans-serif
@@ -47,7 +47,6 @@ main
   font-family: $body_font
   background: $main_bg
   margin: 0 auto
-  padding: 5px 25px
   display: flex
   flex-direction: column
   header
@@ -57,11 +56,24 @@ main
       text-transform: uppercase
       text-align: center
   .home
+    background: url(../img/books.webp)
+    background-size: cover
+    .home-text-wrapper
+      padding: 30px
+      background: rgba(180, 180, 180, .85)
+      border-radius: 10px
+      width: 65%
+      margin: 10px auto
     .author
       background: $author_bg
+      border-radius: 10px
+      width: 75%
+      margin: 0 auto 5px
       display: flex
       flex-direction: row
       align-items: center
+      .image
+        padding: 30px
       .bio
         padding: 30px
 
